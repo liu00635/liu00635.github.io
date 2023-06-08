@@ -1,0 +1,38 @@
+body {
+    font-size: 18px;
+}
+
+header,
+footer {
+    background-color: #faf8d4;
+}
+
+.site-title {
+    color: #47278c
+}
+
+#my-image {
+    box-shadow: 0px 0px 2px 1px black;
+}
+
+main ul {
+    list-style-type: square;
+}
+
+main li:nth-child(odd) {
+    background-color: plum;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+    background-color: lightsalmon;
+    border: 3px solid yellow;
+}
+
+nav a:hover {
+    background-color: lightpink;
+}
