@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: arial;
+    line-height: 1.5;
+    color#333:
+}
+
+header {
+    background-color: #7fa07d;
+    padding: 20px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+li {
+    display: inline;
+}
+
+ul a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 100px;
+
+}
+
+#hero {
+    background-image: url('../img/white_brick_wall.png');
+    background-repeat: repeat;
+    background-size: 80px 50px;
+    background-position: center;
+    text-align: center;
+    padding: 150px 0;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: rgb(49, 49, 49);
+}
+
+h1+p {
+    font-size: 18px;
+    color: rgb(80, 80, 80)
+}
+
+#about h2 {
+    color: #7fa07d;
+    text-align: center;
+}
+
+#about {
+    background-color: #f9f9f9;
+    padding: 50px 100px;
+    line-height: 2;
+}
+
+#services {
+    background-color: #7fa07d;
+    padding: 50px;
+    line-height: 2;
+}
+
+#services h2 {
+    color: #f9f9f9;
+    text-align: center;
+}
+
+footer {
+    background-color: #495648;
+    padding: 20px 50px;
+    color: #7fa07d;
+}
+
+}

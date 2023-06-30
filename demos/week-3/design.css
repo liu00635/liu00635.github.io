@@ -21,3 +21,43 @@ button {
 .tag {
     color: #e63946;
 }
+
+.manu a {
+    display: inline-block;
+    height: 30px;
+    width: 80px;
+    border-radius: 5px;
+    background-color: #e63946;
+    text-decoration: none;
+    text-align: center;
+    line-height: 30px;
+    color: #f1faee;
+    font: bold 17px arial;
+    margin-right: 5px;
+}
+
+a[class=links] {
+    background-color: lightskyblue;
+}
+
+a[id] {
+    background-color: #1d3557;
+}
+
+a:hover {
+    background-color: aquamarine;
+}
+
+a[href$="jpg"] {
+    font-weight: lighter;
+}
+
+a[href*="tx"] {
+    border-style: dashed;
+}
+
+p {
+    font-size: 18px;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+}

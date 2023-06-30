@@ -1,0 +1,52 @@
+html {
+    font-size: 16px;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    line-height: 2;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: lighter;
+    font-style: italic;
+    color: rgb(63, 63, 63);
+    text-align: left;
+    line-height: 32px;
+}
+
+em {
+    color: rgb(255, 73, 73);
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 1.2rem;
+}
+
+span {
+    display: block;
+    height: 30px;
+    width: 80px;
+    text-align: center;
+    line-height: 30px;
+    background-color: rgb(255, 73, 73);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+div {
+    background-image: url('https://picsum.photos/seed/picsum/200/300?blur');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 20%;
+    background-attachment: fixed;
+    height: 80vh;
+}
