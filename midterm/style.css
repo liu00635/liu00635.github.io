@@ -183,13 +183,10 @@ nav {
     background-size: cover;
     padding: 10px;
     text-align: center;
-
-}
-
-nav {
     list-style: none;
     display: flex;
     justify-content: space-between;
+
 }
 
 nav div {
