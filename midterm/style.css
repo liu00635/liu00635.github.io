@@ -150,6 +150,9 @@ body {
 
 /* This is for header */
 /* This is the text on the banner */
+header {
+    position: relative;
+}
 
 h1 {
     position: absolute;
