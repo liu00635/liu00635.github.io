@@ -1,0 +1,180 @@
+/* general styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+body p {
+    font-size: 15px;
+}
+
+.container {
+    max-width: 375px;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+/* header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+nav {
+    display: none;
+}
+
+.main-menu {
+    display: flex;
+}
+
+
+img {
+    max-width: 100%;
+}
+
+.hamburger-menu {
+    align-self: center;
+}
+
+.hero-desktop {
+    display: none;
+}
+
+/* new section */
+.new {
+    background-color: black;
+}
+
+.new h2 {
+    color: hsl(35, 77%, 62%);
+}
+
+.new h3 {
+    color: hsl(36, 100%, 99%);
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.new p {
+    color: hsl(36, 100%, 99%);
+    margin-bottom: 10px;
+}
+
+.new .post {
+    border-bottom: 1px solid hsl(36, 100%, 99%);
+}
+
+/* posts section */
+.posts .post {
+    display: flex
+}
+
+
+
+
+
+
+
+/* desktop */
+
+@media screen and (min-width:768px) {
+    .container {
+        max-width: 1440px;
+    }
+
+    nav {
+        display: block;
+    }
+
+
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav {
+        display: block;
+    }
+
+    .hamburger-menu {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav ul a {
+        margin: 5px 10px;
+        padding: 5px 10px;
+    }
+
+    /* hero section */
+
+    .hero-desktop {
+        display: block;
+    }
+
+    .hero-mobile {
+        display: none;
+    }
+
+    /* main */
+
+    main {
+        display: grid;
+        grid-template-areas:
+            "hero hreo new"
+            "posts posts posts";
+    }
+
+    .hero {
+        grid-area: hero;
+    }
+
+    .new {
+        grid-area: new;
+    }
+
+    .posts {
+        grid-area: posts;
+        display: flex;
+    }
+
+    section {
+        margin: 10px;
+    }
+
+    .hero-description {
+        display: flex
+    }
+
+    .hero-description h2,
+    .hero-description div {
+        flex: 1 1 0;
+    }
+
+
+
+
+
+}

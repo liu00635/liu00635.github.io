@@ -1,0 +1,41 @@
+h1 {
+    text-align: center;
+}
+
+.container {
+    height: 500px;
+    width: 100%;
+    background-color: rgb(60, 43, 107);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: center;
+}
+
+nav div {
+    width: 400px;
+    height: 200px;
+}
+
+.box1 {
+    background-color: #FFE9F3;
+}
+
+.box2 {
+    background-color: #F4BFDB;
+}
+
+.box3 {
+    background-color: #B27092;
+}
+
+.box4 {
+    background-color: #512D38;
+}
+
+.box5 {
+    background-color: #87BAAB;
+}
