@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>magic rabbit studio</title>
-    <p></p>
+    <!-- <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap" rel="stylesheet"> -->
 </head>
 
 <body>
@@ -14,11 +18,13 @@
         <header>
             <!-- this is navigation bar -->
             <div class="navigation">
-                <img src="./assets/logos/logo-black.png" alt="logo" class="logo" height="300">
+                <div class="logoarea">
+                    <img src="./assets/logos/logo-light-yellow.png" alt="logo" class="logo" height="100">
+                </div>
                 <div class="menu">
                     <nav>
                         <ul>
-                            <li><a href="#">Home</a></li>
+                            <li id="home"><a href="#">Home</a></li>
                             <li><a href="#">About Us</a></li>
                             <li><a href="#">Services</a></li>
                             <li><a href="#">Team</a></li>
@@ -36,11 +42,15 @@
 
             <div class="banner">
                 <img src="./assets/images/workspace1.jpg" alt="" width="800">
-                <h1>Welcome to Magic Rabbit Studio</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia vitae reprehenderit nulla quam tempore
-                    atque voluptate dolore beatae esse qui nam omnis, eos assumenda suscipit adipisci autem voluptatibus
-                    voluptas! Doloribus?</p>
-                <button>Connect with us</button>
+                <div class="banner-text">
+                    <h1>Welcome to Magic Rabbit Studio</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia vitae reprehenderit nulla quam
+                        tempore
+                        atque voluptate dolore beatae esse qui nam omnis, eos assumenda suscipit adipisci autem
+                        voluptatibus
+                        voluptas! Doloribus?</p>
+                    <button>Connect with us</button>
+                </div>
             </div>
 
         </header>
@@ -52,6 +62,10 @@
                 <img src="./assets/images/workspace2.jpg" alt="" width="800">
                 <div class="about-text">
                     <h2>About Us</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum iusto enim possimus nisi
+                        pariatur,
+                        cum officia amet dolores. Voluptatibus ab illo odio non corrupti tenetur laborum cupiditate
+                        similique, possimus itaque.</p>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum iusto enim possimus nisi
                         pariatur,
                         cum officia amet dolores. Voluptatibus ab illo odio non corrupti tenetur laborum cupiditate
@@ -127,9 +141,9 @@
 
             <!-- our version area-->
             <section class="vision">
-                <img src="./assets/images/vision.jpg" alt="" width="800">
+                <!-- <img src="./assets/images/vision.jpg" alt=""> -->
                 <div class="vision-text">
-                    <h2>Our Vision</h2>
+                    <h3>Our Vision</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore eveniet, eius similique
                         repudiandae amet ratione distinctio! Dolor molestias quisquam modi perferendis officiis a, quos
                         necessitatibus, qui nihil, beatae nemo totam.</p>
@@ -143,10 +157,11 @@
                 <h2>Our Team</h2>
 
                 <div class="team-member">
-                    <img src="./assets/images/team1.jpg" alt="" width="400">
+                    <img src="./assets/images/member1.jpg" alt="" width="800">
                     <div class="team-description">
                         <h3>John Smith</h3>
                         <h4>CEO and Co-owner</h4>
+                        <div class="line"></div>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae dicta magni explicabo
                             quibusdam iste. Expedita recusandae libero, nisi aspernatur illo officiis fugit in. Possimus
                             expedita magni, laudantium modi saepe culpa?</p>
@@ -154,10 +169,11 @@
                 </div>
 
                 <div class="team-member">
-                    <img src="./assets/images/team2.jpg" alt="" width="400">
+                    <img src="./assets/images/member2.jpg" alt="" width="800">
                     <div class="team-description">
                         <h3>Luna Yang</h3>
                         <h4>CFO and Co-owner</h4>
+                        <div class="line"></div>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae dicta magni explicabo
                             quibusdam iste. Expedita recusandae libero, nisi aspernatur illo officiis fugit in. Possimus
                             expedita magni, laudantium modi saepe culpa?</p>
@@ -172,17 +188,17 @@
                     <h2>Contact Us</h2>
                     <form action="#">
                         <h3>Send us a message</h3>
-                        <label for="name">Full Name</label>
+                        <div><label for="name">Full Name</label></div>
                         <input type="text" id="name" name="name">
                     </form>
 
                     <form action="#">
-                        <label for="email">Email</label>
+                        <div><label for="email">Email</label></div>
                         <input id="email" type="email" name="email">
                     </form>
 
                     <form action="#">
-                        <label for="message">Message</label>
+                        <div><label for="message">Message</label></div>
                         <input id="message" type="text" name="message">
                     </form>
 
@@ -195,20 +211,25 @@
                 <div class="hours">
                     <h3>Hours of Operation</h3>
                     <table>
-                        <tr>
-                            <th>Days</th>
-                            <th>Hours</th>
-                        </tr>
+                        <thead>
+                            <tr>
+                                <th>Days</th>
+                                <th>Hours</th>
+                            </tr>
+                        </thead>
 
-                        <tr>
-                            <td>Monday-Friday</td>
-                            <td>9AM-6PM</td>
-                        </tr>
+                        <tbody>
 
-                        <tr>
-                            <td>Saturday-Sunday</td>
-                            <td>Closed</td>
-                        </tr>
+                            <tr>
+                                <td>Monday-Friday</td>
+                                <td>9AM-6PM</td>
+                            </tr>
+
+                            <tr>
+                                <td>Saturday-Sunday</td>
+                                <td>Closed</td>
+                            </tr>
+                        </tbody>
 
 
                     </table>
@@ -217,10 +238,12 @@
                 <div class="location">
                     <h3>Location</h3>
                     <!-- google map link -->
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.944269826783!2d-75.75750062480591!3d45.349937241057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1szh-CN!2sca!4v1690333599547!5m2!1szh-CN!2sca"
-                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.944269826783!2d-75.75750062480591!3d45.349937241057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1szh-CN!2sca!4v1690333599547!5m2!1szh-CN!2sca"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
 
 
@@ -230,7 +253,7 @@
         <!-- this is footer -->
 
         <footer>©Copyright Magic Rabbit Studio,2023<br>
-            All images are taken from Unsplash
+            All images are taken from <a href="https://unsplash.com/">Unsplash</a>
         </footer>
     </div>
 

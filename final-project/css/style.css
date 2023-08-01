@@ -1,3 +1,298 @@
+/* general styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 1200px;
+    min-width: 760px;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 800;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 40px;
+    line-height: 2;
+}
+
+h3 {
+    font-size: 30px;
+    line-height: 1.5;
+}
+
+h4 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+button {
+    font-size: 18px;
+}
+
 img {
     max-width: 100%;
 }
+
+/* header style */
+
+nav a {
+    text-decoration: none;
+    color: #c78c06;
+}
+
+.navigation {
+    background-color: black;
+    padding: 15px;
+}
+
+.logoarea {
+    background-color: #c78c06;
+    justify-content: center;
+    padding: 20px;
+}
+
+.logo {
+    display: block;
+    align-self: center;
+    margin: 0 auto;
+}
+
+
+.menu {
+    text-align: center;
+}
+
+nav li {
+    height: 50px;
+    line-height: 50px;
+}
+
+/* set the first line color */
+nav #home {
+    background-color: #c78c06;
+}
+
+nav #home a {
+    color: black;
+}
+
+/* search area */
+.search {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.search input {
+    width: 95%;
+    height: 30px;
+}
+
+.search img {
+    background-color: white;
+    margin: auto;
+}
+
+/* banner area */
+.banner {
+    position: relative;
+    width: 100%;
+}
+
+.banner img {
+    max-width: 100%;
+    height: auto;
+}
+
+.banner-text {
+    position: absolute;
+    top: 20%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 70%;
+    padding: 15px;
+}
+
+.banner-text h1 {
+    line-height: 1.5;
+}
+
+.banner-text p {
+    line-height: 1.5;
+    padding: 20px 0;
+}
+
+.banner button {
+    background-color: #c78c06;
+    padding: 20px;
+    border: none;
+}
+
+/* about us area */
+.about {
+    background-color: #ffe6ac;
+    padding: 15px;
+}
+
+.about p {
+    padding-top: 10px;
+}
+
+.about-text {
+    padding: 10px 0;
+}
+
+/* our services area */
+.services {
+    padding: 15px;
+}
+
+.card {
+    background-color: #ffe6ac;
+    margin-bottom: 15px;
+}
+
+.service-text {
+    padding: 10px;
+}
+
+.services button {
+    margin-top: 10px;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+/* our vision area */
+.vision {
+    background-image: url(../assets/images/vision.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+}
+
+.vision-text {
+    padding: 15px;
+    color: white;
+}
+
+.vision button {
+    margin-top: 15px;
+    padding: 20px;
+    background-color: rgb(13, 13, 13, 0.3);
+    color: white;
+    border: 1px solid #c78c06;
+}
+
+/* our team area */
+.team {
+    padding: 15px;
+}
+
+.team-member {
+    background-color: #ffe6ac;
+    padding: 15px;
+}
+
+.team img {
+    width: 100%
+}
+
+.team-description p {
+    padding: 10px 0;
+}
+
+.line {
+    height: 2px;
+    background-color: #c78c06;
+}
+
+/* contact us area */
+.contact {
+    padding: 15px;
+}
+
+input {
+    width: 99%;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+#name,
+#email {
+    height: 20px;
+}
+
+#message {
+    height: 120px;
+}
+
+.contactsheet div {
+    padding-top: 8px;
+    padding-bottom: 3px;
+}
+
+button {
+    background-color: black;
+    color: #c78c06;
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+/* business hours table */
+
+.hours {
+    padding: 10px 0
+}
+
+.hours h3 {
+    padding: 10px 0;
+}
+
+.hours table {
+    width: 100%;
+    border: 1px solid black;
+    font-weight: 500;
+}
+
+thead {
+    background-color: #ffe6ac;
+}
+
+th {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid black
+}
+
+/* footer area */
+footer {
+    background-color: black;
+    color: #c78c06;
+    line-height: 2;
+    padding: 15px;
+}
+
+footer a {
+    color: #c78c06
+}
+
+/* desktop version starts here */
