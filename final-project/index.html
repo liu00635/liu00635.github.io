@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>magic rabbit studio</title>
-    <!-- <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -20,28 +20,37 @@
             <div class="navigation">
                 <div class="logoarea">
                     <img src="./assets/logos/logo-light-yellow.png" alt="logo" class="logo" height="100">
+                    <img src="./assets/logos/logo-simple.png" alt="" class="onlylogo" height="60">
                 </div>
                 <div class="menu">
                     <nav>
                         <ul>
+
                             <li id="home"><a href="#">Home</a></li>
-                            <li><a href="#">About Us</a></li>
+
+                            <li id="about"><a href="#">About Us</a></li>
+
                             <li><a href="#">Services</a></li>
+
                             <li><a href="#">Team</a></li>
+
                             <li><a href="#">Contact</a></li>
+
                         </ul>
                     </nav>
                 </div>
                 <!-- searching area -->
                 <div class="search">
                     <input type="text" name="search" placeholder="Search">
-                    <img src="./assets/logos/iconmonstr-magnifier-lined.svg" alt="search-icon" height="30">
+                    <img src="./assets/logos/magnifier.png" alt="search-icon">
                 </div>
 
             </div>
 
             <div class="banner">
-                <img src="./assets/images/workspace1.jpg" alt="" width="800">
+                <img src="./assets/images/workspace1-mobile.jpg" alt="" class="banner-small">
+                <img src="./assets/images/workspace1.jpg" alt="" class="banner-mobile">
+                <img src="./assets/images/workspace1-desktop.jpg" alt="" class="banner-desktop">
                 <div class="banner-text">
                     <h1>Welcome to Magic Rabbit Studio</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia vitae reprehenderit nulla quam
@@ -49,7 +58,10 @@
                         atque voluptate dolore beatae esse qui nam omnis, eos assumenda suscipit adipisci autem
                         voluptatibus
                         voluptas! Doloribus?</p>
-                    <button>Connect with us</button>
+                    <div class="button"><button>
+                            Connect with us <img src="./assets/logos/triangle.png" alt="">
+                        </button>
+                    </div>
                 </div>
             </div>
 
@@ -59,7 +71,7 @@
         <main>
             <!-- about us area -->
             <section class="about">
-                <img src="./assets/images/workspace2.jpg" alt="" width="800">
+                <img src="./assets/images/workspace2.jpg" alt="">
                 <div class="about-text">
                     <h2>About Us</h2>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum iusto enim possimus nisi
@@ -77,65 +89,73 @@
 
             <section class="services">
                 <h2>Our Services</h2>
-                <div class="card">
-                    <img src="./assets/images/workspace3.jpg" alt="" width="800">
-                    <div class="service-text">
-                        <h3>Graphic Design</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, sapiente quibusdam.
-                            Reprehenderit
-                            incidunt recusandae harum placeat sequi temporibus soluta unde eum? Voluptatum quibusdam id
-                            quis, officiis esse quam modi natus.</p>
-                        <button>View Our Works</button>
+                <div class="cards">
+                    <div class="card" id="card1">
+                        <img src="./assets/images/workspace3.jpg" alt="" width="800">
+                        <div class="service-text">
+                            <h3>Graphic Design</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, sapiente quibusdam.
+                                Reprehenderit
+                                incidunt recusandae harum placeat sequi temporibus soluta unde eum? Voluptatum quibusdam
+                                id
+                                quis, officiis esse quam modi natus.</p>
+                            <button>View Our Works<img src="./assets/logos/triangle1-01.png" alt="tiangle"> </button>
+                        </div>
+                    </div>
+
+                    <div class="card" id="card2">
+                        <img src="./assets/images/workspace4.jpg" alt="" width="800">
+                        <div class="service-text">
+                            <h3>Web Development</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, sapiente quibusdam.
+                                Reprehenderit
+                                incidunt recusandae harum placeat sequi temporibus soluta unde eum? Voluptatum quibusdam
+                                id
+                                quis, officiis esse quam modi natus.</p>
+                            <button>View Our Works<img src="./assets/logos/triangle1-01.png" alt="tiangle"></button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./assets/images/workspace7.jpg" alt="" width="800">
+                        <div class="service-text" id="card3">
+                            <h3>Vidio Production</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, sapiente quibusdam.
+                                Reprehenderit
+                                incidunt recusandae harum placeat sequi temporibus soluta unde eum? Voluptatum quibusdam
+                                id
+                                quis, officiis esse quam modi natus.</p>
+                            <button>View Our Works<img src="./assets/logos/triangle1-01.png" alt="tiangle"></button>
+                        </div>
+                    </div>
+
+                    <div class="card" id="card4">
+                        <img src="./assets/images/workspace6.jpg" alt="" width="800">
+                        <div class="service-text">
+                            <h3>Brand Consulting</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, sapiente quibusdam.
+                                Reprehenderit
+                                incidunt recusandae harum placeat sequi temporibus soluta unde eum? Voluptatum quibusdam
+                                id
+                                quis, officiis esse quam modi natus.</p>
+                            <button>View Our Works<img src="./assets/logos/triangle1-01.png" alt="tiangle"></button>
+                        </div>
+                    </div>
+
+                    <div class="card" id="card5">
+                        <img src="./assets/images/workspace6.jpg" alt="" width="800">
+                        <div class="service-text">
+                            <h3>Digital Marketing</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, sapiente quibusdam.
+                                Reprehenderit
+                                incidunt recusandae harum placeat sequi temporibus soluta unde eum? Voluptatum quibusdam
+                                id
+                                quis, officiis esse quam modi natus.</p>
+                            <button>View Our Works<img src="./assets/logos/triangle1-01.png" alt="tiangle"> </button>
+                        </div>
                     </div>
                 </div>
 
-                <div class="card">
-                    <img src="./assets/images/workspace4.jpg" alt="" width="800">
-                    <div class="service-text">
-                        <h3>Web Development</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, sapiente quibusdam.
-                            Reprehenderit
-                            incidunt recusandae harum placeat sequi temporibus soluta unde eum? Voluptatum quibusdam id
-                            quis, officiis esse quam modi natus.</p>
-                        <button>View Our Works</button>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="./assets/images/workspace7.jpg" alt="" width="800">
-                    <div class="service-text">
-                        <h3>Vidio Production</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, sapiente quibusdam.
-                            Reprehenderit
-                            incidunt recusandae harum placeat sequi temporibus soluta unde eum? Voluptatum quibusdam id
-                            quis, officiis esse quam modi natus.</p>
-                        <button>View Our Works</button>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="./assets/images/workspace6.jpg" alt="" width="800">
-                    <div class="service-text">
-                        <h3>Brand Consulting</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, sapiente quibusdam.
-                            Reprehenderit
-                            incidunt recusandae harum placeat sequi temporibus soluta unde eum? Voluptatum quibusdam id
-                            quis, officiis esse quam modi natus.</p>
-                        <button>View Our Works</button>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="./assets/images/workspace5.jpg" alt="" width="800">
-                    <div class="service-text">
-                        <h3>Digital Marketing</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, sapiente quibusdam.
-                            Reprehenderit
-                            incidunt recusandae harum placeat sequi temporibus soluta unde eum? Voluptatum quibusdam id
-                            quis, officiis esse quam modi natus.</p>
-                        <button>View Our Works</button>
-                    </div>
-                </div>
 
             </section>
 
@@ -147,7 +167,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore eveniet, eius similique
                         repudiandae amet ratione distinctio! Dolor molestias quisquam modi perferendis officiis a, quos
                         necessitatibus, qui nihil, beatae nemo totam.</p>
-                    <button>Learn More</button>
+                    <button>Learn More<img src="./assets/logos/triangle1-01.png" alt="tiangle"></button>
                 </div>
             </section>
 
@@ -156,93 +176,99 @@
             <section class="team">
                 <h2>Our Team</h2>
 
-                <div class="team-member">
-                    <img src="./assets/images/member1.jpg" alt="" width="800">
-                    <div class="team-description">
+                <div class="teamgrid">
+
+
+                    <img src="./assets/images/member1.jpg" alt="" id="member1">
+                    <div class="team-description" id="john">
                         <h3>John Smith</h3>
                         <h4>CEO and Co-owner</h4>
                         <div class="line"></div>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae dicta magni explicabo
-                            quibusdam iste. Expedita recusandae libero, nisi aspernatur illo officiis fugit in. Possimus
+                            quibusdam iste. Expedita recusandae libero, nisi aspernatur illo officiis fugit in.
+                            Possimus
                             expedita magni, laudantium modi saepe culpa?</p>
                     </div>
-                </div>
 
-                <div class="team-member">
-                    <img src="./assets/images/member2.jpg" alt="" width="800">
-                    <div class="team-description">
+
+                    <img src="./assets/images/member2.jpg" alt="" id="member2">
+                    <div class="team-description" id="luna">
                         <h3>Luna Yang</h3>
                         <h4>CFO and Co-owner</h4>
                         <div class="line"></div>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae dicta magni explicabo
-                            quibusdam iste. Expedita recusandae libero, nisi aspernatur illo officiis fugit in. Possimus
+                            quibusdam iste. Expedita recusandae libero, nisi aspernatur illo officiis fugit in.
+                            Possimus
                             expedita magni, laudantium modi saepe culpa?</p>
                     </div>
+
                 </div>
             </section>
 
             <!-- contact information area -->
             <section class="contact">
+                <h2>Contact Us</h2>
+                <div class="contactgrid">
 
-                <div class="contactsheet">
-                    <h2>Contact Us</h2>
-                    <form action="#">
-                        <h3>Send us a message</h3>
-                        <div><label for="name">Full Name</label></div>
-                        <input type="text" id="name" name="name">
-                    </form>
+                    <div class="contactsheet">
+                        <form action="#">
+                            <h3>Send us a message</h3>
+                            <div><label for="name">Full Name</label></div>
+                            <input type="text" id="name" name="name">
+                        </form>
 
-                    <form action="#">
-                        <div><label for="email">Email</label></div>
-                        <input id="email" type="email" name="email">
-                    </form>
+                        <form action="#">
+                            <div><label for="email">Email</label></div>
+                            <input id="email" type="email" name="email">
+                        </form>
 
-                    <form action="#">
-                        <div><label for="message">Message</label></div>
-                        <input id="message" type="text" name="message">
-                    </form>
+                        <form action="#">
+                            <div><label for="message">Message</label></div>
+                            <input id="message" type="text" name="message">
+                        </form>
 
-                    <button>Send</button>
+                        <button>Send</button>
 
-                </div>
+                    </div>
 
-                <!-- our location and business hours -->
+                    <!-- our location and business hours -->
 
-                <div class="hours">
-                    <h3>Hours of Operation</h3>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Days</th>
-                                <th>Hours</th>
-                            </tr>
-                        </thead>
+                    <div class="hours">
+                        <h3>Hours of Operation</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Days</th>
+                                    <th>Hours</th>
+                                </tr>
+                            </thead>
 
-                        <tbody>
+                            <tbody>
 
-                            <tr>
-                                <td>Monday-Friday</td>
-                                <td>9AM-6PM</td>
-                            </tr>
+                                <tr>
+                                    <td>Monday-Friday</td>
+                                    <td>9AM-6PM</td>
+                                </tr>
 
-                            <tr>
-                                <td>Saturday-Sunday</td>
-                                <td>Closed</td>
-                            </tr>
-                        </tbody>
+                                <tr>
+                                    <td>Saturday-Sunday</td>
+                                    <td>Closed</td>
+                                </tr>
+                            </tbody>
 
 
-                    </table>
-                </div>
+                        </table>
+                    </div>
 
-                <div class="location">
-                    <h3>Location</h3>
-                    <!-- google map link -->
-                    <div class="map">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.944269826783!2d-75.75750062480591!3d45.349937241057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1szh-CN!2sca!4v1690333599547!5m2!1szh-CN!2sca"
-                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="location">
+                        <h3>Location</h3>
+                        <!-- google map link -->
+                        <div class="map">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.944269826783!2d-75.75750062480591!3d45.349937241057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1szh-CN!2sca!4v1690333599547!5m2!1szh-CN!2sca"
+                                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
                     </div>
                 </div>
 
@@ -253,7 +279,7 @@
         <!-- this is footer -->
 
         <footer>©Copyright Magic Rabbit Studio,2023<br>
-            All images are taken from <a href="https://unsplash.com/">Unsplash</a>
+            All images are taken from <a href="https://unsplash.com/">unsplash</a>
         </footer>
     </div>
 
